@@ -56,8 +56,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jMenu1.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconCadastro.png")); // NOI18N
         jMenu1.setText("Cadastro   |");
 
+        jMenu9.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconHosp.png")); // NOI18N
         jMenu9.setText("Hóspede");
 
         MenuCadHospede.setText("Cadastrar");
@@ -68,6 +70,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu1.add(jMenu9);
 
+        jMenu10.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconQuarto.png")); // NOI18N
         jMenu10.setText("Quarto");
 
         MenuCadQuarto.setText("Cadastrar");
@@ -78,6 +81,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu1.add(jMenu10);
 
+        jMenu11.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconFunc.png")); // NOI18N
         jMenu11.setText("Funcionários");
 
         MenuCadFuncionarios.setText("Cadastrar");
@@ -88,6 +92,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu1.add(jMenu11);
 
+        jMenu12.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconForne.png")); // NOI18N
         jMenu12.setText("Fornecedores");
 
         MenuCadFornecedores.setText("Cadastrar");
@@ -98,6 +103,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu1.add(jMenu12);
 
+        jMenu13.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconProdu.png")); // NOI18N
         jMenu13.setText("Produtos");
 
         MenuCadProdutos.setText("Cadastrar");
@@ -108,6 +114,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu1.add(jMenu13);
 
+        jMenu14.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconServ.png")); // NOI18N
         jMenu14.setText("Serviços");
 
         MenuCadServicos.setText("Cadastrar");
@@ -123,7 +130,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu2.setText("Reservas   |");
         jMenuBar1.add(jMenu2);
 
-        jMenu3.setText("Vendas");
+        jMenu3.setText("Vendas   |");
         jMenuBar1.add(jMenu3);
 
         jMenu4.setText("Financeiro   |");
@@ -151,7 +158,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 410, Short.MAX_VALUE)
+            .addGap(0, 394, Short.MAX_VALUE)
         );
 
         pack();

@@ -6,11 +6,17 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenu1">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="D:\Bruno\ProjetoHotel\imagens\iconCadastro.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Cadastro   |"/>
           </Properties>
           <SubComponents>
             <Menu class="javax.swing.JMenu" name="jMenu9">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="D:\Bruno\ProjetoHotel\imagens\iconHosp.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="H&#xf3;spede"/>
               </Properties>
               <SubComponents>
@@ -28,6 +34,9 @@
             </Menu>
             <Menu class="javax.swing.JMenu" name="jMenu10">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="D:\Bruno\ProjetoHotel\imagens\iconQuarto.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Quarto"/>
               </Properties>
               <SubComponents>
@@ -45,6 +54,9 @@
             </Menu>
             <Menu class="javax.swing.JMenu" name="jMenu11">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="D:\Bruno\ProjetoHotel\imagens\iconFunc.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Funcion&#xe1;rios"/>
               </Properties>
               <SubComponents>
@@ -62,6 +74,9 @@
             </Menu>
             <Menu class="javax.swing.JMenu" name="jMenu12">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="D:\Bruno\ProjetoHotel\imagens\iconForne.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Fornecedores"/>
               </Properties>
               <SubComponents>
@@ -79,6 +94,9 @@
             </Menu>
             <Menu class="javax.swing.JMenu" name="jMenu13">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="D:\Bruno\ProjetoHotel\imagens\iconProdu.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Produtos"/>
               </Properties>
               <SubComponents>
@@ -96,6 +114,9 @@
             </Menu>
             <Menu class="javax.swing.JMenu" name="jMenu14">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="D:\Bruno\ProjetoHotel\imagens\iconServ.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Servi&#xe7;os"/>
               </Properties>
               <SubComponents>
@@ -120,7 +141,7 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Vendas"/>
+            <Property name="text" type="java.lang.String" value="Vendas   |"/>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu4">
@@ -179,7 +200,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="410" max="32767" attributes="0"/>
+          <EmptySpace min="0" pref="394" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
