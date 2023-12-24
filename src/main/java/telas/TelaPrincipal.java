@@ -15,6 +15,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
      */
     public TelaPrincipal() {
         initComponents();
+        
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -26,6 +28,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jToggleButton1 = new javax.swing.JToggleButton();
+        jPanel1 = new javax.swing.JPanel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel1 = new javax.swing.JLabel();
+        telaFundo = new javax.swing.JDesktopPane();
+        jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu9 = new javax.swing.JMenu();
@@ -47,14 +55,79 @@ public class TelaPrincipal extends javax.swing.JFrame {
         MenuCadServicos = new javax.swing.JMenuItem();
         MenuConServicos = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        CadReserva = new javax.swing.JMenu();
+        ConReserva = new javax.swing.JMenu();
+        FinReserva = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
+        VendaProd = new javax.swing.JMenu();
+        VendaServ = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
+        jMenu15 = new javax.swing.JMenu();
+        CadContaspagar = new javax.swing.JMenuItem();
+        ConContasapagar = new javax.swing.JMenuItem();
+        jMenu16 = new javax.swing.JMenu();
+        CadContasareceber = new javax.swing.JMenuItem();
+        ConContasareceber = new javax.swing.JMenuItem();
+        jMenu17 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
+        jMenu18 = new javax.swing.JMenu();
+        RelContasapagar = new javax.swing.JMenuItem();
+        RelContasareceber = new javax.swing.JMenuItem();
+        RelBalanco = new javax.swing.JMenuItem();
+        jMenu19 = new javax.swing.JMenu();
+        RelQuartiDisp = new javax.swing.JMenuItem();
+        RelQuartosOcup = new javax.swing.JMenuItem();
+        RelReserFutura = new javax.swing.JMenuItem();
+        jMenu20 = new javax.swing.JMenu();
+        jMenu21 = new javax.swing.JMenu();
+        jMenu22 = new javax.swing.JMenu();
+        jMenu23 = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
         jMenu7 = new javax.swing.JMenu();
         jMenu8 = new javax.swing.JMenu();
 
+        jToggleButton1.setText("jToggleButton1");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setText("Sistema Hotel Projeto PIM - Sistema desenvolvido po Bruno Lima - Todos os direitos reservados - 2023");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator1)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(164, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addContainerGap(165, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(28, Short.MAX_VALUE)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1))
+        );
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\fundoPrincipal.jpg")); // NOI18N
+
+        telaFundo.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout telaFundoLayout = new javax.swing.GroupLayout(telaFundo);
+        telaFundo.setLayout(telaFundoLayout);
+        telaFundoLayout.setHorizontalGroup(
+            telaFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+        );
+        telaFundoLayout.setVerticalGroup(
+            telaFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, telaFundoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 660, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
 
         jMenu1.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconCadastro.png")); // NOI18N
         jMenu1.setText("Cadastro   |");
@@ -62,9 +135,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu9.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconHosp.png")); // NOI18N
         jMenu9.setText("Hóspede");
 
+        MenuCadHospede.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconCad.png")); // NOI18N
         MenuCadHospede.setText("Cadastrar");
         jMenu9.add(MenuCadHospede);
 
+        MenuConHospede.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconConsul.png")); // NOI18N
         MenuConHospede.setText("Consultar");
         jMenu9.add(MenuConHospede);
 
@@ -73,9 +148,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu10.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconQuarto.png")); // NOI18N
         jMenu10.setText("Quarto");
 
+        MenuCadQuarto.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconCad.png")); // NOI18N
         MenuCadQuarto.setText("Cadastrar");
         jMenu10.add(MenuCadQuarto);
 
+        MenuConQuarto.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconConsul.png")); // NOI18N
         MenuConQuarto.setText("Consultar");
         jMenu10.add(MenuConQuarto);
 
@@ -84,9 +161,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu11.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconFunc.png")); // NOI18N
         jMenu11.setText("Funcionários");
 
+        MenuCadFuncionarios.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconCad.png")); // NOI18N
         MenuCadFuncionarios.setText("Cadastrar");
         jMenu11.add(MenuCadFuncionarios);
 
+        MenuConFuncionarios.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconConsul.png")); // NOI18N
         MenuConFuncionarios.setText("Consultar");
         jMenu11.add(MenuConFuncionarios);
 
@@ -95,9 +174,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu12.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconForne.png")); // NOI18N
         jMenu12.setText("Fornecedores");
 
+        MenuCadFornecedores.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconCad.png")); // NOI18N
         MenuCadFornecedores.setText("Cadastrar");
         jMenu12.add(MenuCadFornecedores);
 
+        MenuConFornecedores.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconConsul.png")); // NOI18N
         MenuConFornecedores.setText("Consultar");
         jMenu12.add(MenuConFornecedores);
 
@@ -106,9 +187,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu13.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconProdu.png")); // NOI18N
         jMenu13.setText("Produtos");
 
+        MenuCadProdutos.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconCad.png")); // NOI18N
         MenuCadProdutos.setText("Cadastrar");
         jMenu13.add(MenuCadProdutos);
 
+        MenuConProdutos.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconConsul.png")); // NOI18N
         MenuConProdutos.setText("Consultar");
         jMenu13.add(MenuConProdutos);
 
@@ -117,9 +200,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu14.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconServ.png")); // NOI18N
         jMenu14.setText("Serviços");
 
+        MenuCadServicos.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconCad.png")); // NOI18N
         MenuCadServicos.setText("Cadastrar");
         jMenu14.add(MenuCadServicos);
 
+        MenuConServicos.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconConsul.png")); // NOI18N
         MenuConServicos.setText("Consultar");
         jMenu14.add(MenuConServicos);
 
@@ -127,25 +212,123 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
+        jMenu2.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconReserva.png")); // NOI18N
         jMenu2.setText("Reservas   |");
+
+        CadReserva.setText("Cadastrar Reserva");
+        jMenu2.add(CadReserva);
+
+        ConReserva.setText("Consultar Reserva");
+        jMenu2.add(ConReserva);
+
+        FinReserva.setText("Finalizar Reserva");
+        jMenu2.add(FinReserva);
+
         jMenuBar1.add(jMenu2);
 
+        jMenu3.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconVenda.png")); // NOI18N
         jMenu3.setText("Vendas   |");
+
+        VendaProd.setText("Produtos");
+        jMenu3.add(VendaProd);
+
+        VendaServ.setText("Serviço");
+        jMenu3.add(VendaServ);
+
         jMenuBar1.add(jMenu3);
 
+        jMenu4.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconFinanceiro.png")); // NOI18N
         jMenu4.setText("Financeiro   |");
+
+        jMenu15.setText("Contas a Pagar");
+
+        CadContaspagar.setText("Cadastrar");
+        jMenu15.add(CadContaspagar);
+
+        ConContasapagar.setText("Consultar");
+        jMenu15.add(ConContasapagar);
+
+        jMenu4.add(jMenu15);
+
+        jMenu16.setText("Contas a Receber");
+
+        CadContasareceber.setText("Cadastrar");
+        jMenu16.add(CadContasareceber);
+
+        ConContasareceber.setText("Consultar");
+        jMenu16.add(ConContasareceber);
+
+        jMenu4.add(jMenu16);
+
+        jMenu17.setText("Balanço");
+        jMenu4.add(jMenu17);
+
         jMenuBar1.add(jMenu4);
 
+        jMenu5.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconRelatorio.png")); // NOI18N
         jMenu5.setText("Relatórios   |");
+
+        jMenu18.setText("Financeiro");
+
+        RelContasapagar.setText("Contas a Pagar");
+        jMenu18.add(RelContasapagar);
+
+        RelContasareceber.setText("Contas a Receber");
+        jMenu18.add(RelContasareceber);
+
+        RelBalanco.setText("Balanço");
+        jMenu18.add(RelBalanco);
+
+        jMenu5.add(jMenu18);
+
+        jMenu19.setText("Reservas");
+
+        RelQuartiDisp.setText("Quartos Disponiveis");
+        jMenu19.add(RelQuartiDisp);
+
+        RelQuartosOcup.setText("Quartos Ocupados");
+        RelQuartosOcup.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RelQuartosOcupActionPerformed(evt);
+            }
+        });
+        jMenu19.add(RelQuartosOcup);
+
+        RelReserFutura.setText("Reservas Futuras");
+        jMenu19.add(RelReserFutura);
+
+        jMenu5.add(jMenu19);
+
+        jMenu20.setText("Vendas");
+        jMenu5.add(jMenu20);
+
+        jMenu21.setText("Hospedes");
+        jMenu5.add(jMenu21);
+
+        jMenu22.setText("Funcionários");
+        jMenu5.add(jMenu22);
+
+        jMenu23.setText("Fornecedores");
+        jMenu5.add(jMenu23);
+
         jMenuBar1.add(jMenu5);
 
+        jMenu6.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconSeguranca.png")); // NOI18N
         jMenu6.setText("Segurança   |");
         jMenuBar1.add(jMenu6);
 
+        jMenu7.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconFerramenta.png")); // NOI18N
         jMenu7.setText("Ferramentas   |");
         jMenuBar1.add(jMenu7);
 
+        jMenu8.setIcon(new javax.swing.ImageIcon("D:\\Bruno\\ProjetoHotel\\imagens\\iconSair.png")); // NOI18N
         jMenu8.setText("Sair");
+        jMenu8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu8MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu8);
 
         setJMenuBar(jMenuBar1);
@@ -154,15 +337,32 @@ public class TelaPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 677, Short.MAX_VALUE)
+            .addComponent(telaFundo)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 394, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(telaFundo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void RelQuartosOcupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RelQuartosOcupActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RelQuartosOcupActionPerformed
+
+    private void jMenu8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu8MouseClicked
 
     /**
      * @param args the command line arguments
@@ -200,6 +400,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem CadContasareceber;
+    private javax.swing.JMenuItem CadContaspagar;
+    private javax.swing.JMenu CadReserva;
+    private javax.swing.JMenuItem ConContasapagar;
+    private javax.swing.JMenuItem ConContasareceber;
+    private javax.swing.JMenu ConReserva;
+    private javax.swing.JMenu FinReserva;
     private javax.swing.JMenuItem MenuCadFornecedores;
     private javax.swing.JMenuItem MenuCadFuncionarios;
     private javax.swing.JMenuItem MenuCadHospede;
@@ -212,13 +419,32 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem MenuConProdutos;
     private javax.swing.JMenuItem MenuConQuarto;
     private javax.swing.JMenuItem MenuConServicos;
+    private javax.swing.JMenuItem RelBalanco;
+    private javax.swing.JMenuItem RelContasapagar;
+    private javax.swing.JMenuItem RelContasareceber;
+    private javax.swing.JMenuItem RelQuartiDisp;
+    private javax.swing.JMenuItem RelQuartosOcup;
+    private javax.swing.JMenuItem RelReserFutura;
+    private javax.swing.JMenu VendaProd;
+    private javax.swing.JMenu VendaServ;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
     private javax.swing.JMenu jMenu14;
+    private javax.swing.JMenu jMenu15;
+    private javax.swing.JMenu jMenu16;
+    private javax.swing.JMenu jMenu17;
+    private javax.swing.JMenu jMenu18;
+    private javax.swing.JMenu jMenu19;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu20;
+    private javax.swing.JMenu jMenu21;
+    private javax.swing.JMenu jMenu22;
+    private javax.swing.JMenu jMenu23;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
@@ -227,5 +453,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu8;
     private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JDesktopPane telaFundo;
     // End of variables declaration//GEN-END:variables
 }
